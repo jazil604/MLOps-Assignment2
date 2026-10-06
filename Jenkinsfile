@@ -10,14 +10,14 @@ pipeline {
             }
         }
 
-        stage('Create Python Environment') {
-            steps {
-                powershell '''
-                    $python = "C:\\Users\\HP PROBOOK\\AppData\\Local\\Python\\bin\\python.exe"
-                    & $python -m venv .dk
-                '''
-            }
-        }
+     stage('Create Python Environment') {
+    steps {
+        powershell '''
+            $python = "C:\\Users\\HP PROBOOK\\AppData\\Local\\Python\\bin\\python.exe"
+            & $python -m venv .dk
+        '''
+    }
+}
 
         stage('Install Dependencies') {
             steps {
