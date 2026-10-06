@@ -24,6 +24,7 @@ pipeline {
                 powershell '''
                     .\\.dk\\Scripts\\python.exe -m pip install --upgrade pip
                     .\\.dk\\Scripts\\python.exe -m pip install -r requirements.txt
+                    .\\.dk\\Scripts\\python.exe -m pip install pytest
                 '''
             }
         }
